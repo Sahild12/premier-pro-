@@ -49,7 +49,7 @@ or with Python:
    ```
 
 
-Visit `http://localhost:PORT` in your browser.
+Visit `https://premier-pro.vercel.app/` in your browser.
 📱 Browser & Device Notes
 The site is designed for landscape orientation; a full-screen warning appears on portrait/small-screen devices, prompting users to rotate.
 Animations rely on `ScrollTrigger`, so JavaScript must be enabled.
