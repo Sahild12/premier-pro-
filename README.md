@@ -28,7 +28,7 @@ Google Fonts: `Dancing Script`, `Pacifico`, `Tinos`, `Geom`, `Playwrite CU Guide
 └── imgs/           # Model, editorial, and background images (not included in repo)
 └── Videos/         # Hero background video (not included in repo)
 ```
-> \*\*Note:\*\* The `imgs/` and `Videos/` folders referenced in `index.html` are not part of this repository export. You'll need to add your own media assets with matching filenames, or update the paths in `index.html` to point to your own assets.
+> **Note:** The `imgs/` and `Videos/` folders referenced in `index.html` are not part of this repository export. You'll need to add your own media assets with matching filenames, or update the paths in `index.html` to point to your own assets.
 
 
 🚀 Getting Started
