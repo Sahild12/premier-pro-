@@ -204,6 +204,33 @@ function mobileMenu() {
   }
 }
 
+function heroVideoControls() {
+  var heroVideo = document.querySelector("#content video");
+  var toggle = document.querySelector("#hero-video-toggle");
+
+  if (!heroVideo || !toggle) return;
+
+  var icon = toggle.querySelector("i");
+  function updateControl() {
+    var isPaused = heroVideo.paused;
+    toggle.setAttribute("aria-label", isPaused ? "Play hero video" : "Pause hero video");
+    icon.classList.toggle("ri-play-fill", isPaused);
+    icon.classList.toggle("ri-pause-fill", !isPaused);
+  }
+
+  toggle.addEventListener("click", function () {
+    if (heroVideo.paused) {
+      heroVideo.play().catch(updateControl);
+    } else {
+      heroVideo.pause();
+    }
+  });
+
+  heroVideo.addEventListener("play", updateControl);
+  heroVideo.addEventListener("pause", updateControl);
+  updateControl();
+}
+
 page1();
 page2();
 page2nd();
@@ -211,4 +238,5 @@ page3();
 page4();
 page5();
 mobileMenu();
+heroVideoControls();
 
